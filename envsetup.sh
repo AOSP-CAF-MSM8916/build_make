@@ -346,7 +346,6 @@ function set_stuff_for_environment()
 {
     setpaths
     set_sequence_number
-
     # With this environment variable new GCC can apply colors to warnings/errors
     export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 }
@@ -683,6 +682,7 @@ function lunch()
 
     echo
 
+    link_hals
     set_stuff_for_environment
     printconfig
     destroy_build_var_cache
